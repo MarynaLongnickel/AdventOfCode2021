@@ -1,6 +1,6 @@
 from urllib.request import urlopen
     
-data = urlopen('https://tinyurl.com/tuab7fz4').read().decode().split('\n')[:-1]
+data = urlopen('https://raw.githubusercontent.com/MarynaLongnickel/AdventOfCode2021/master/Day3/day3.txt').read().decode().split('\n')[:-1]
     
 nums = data[0].split(',')
 data = [x.split() for x in data[1:] if x]
