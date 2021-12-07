@@ -8,32 +8,23 @@ def s2(i): return sum([abs(x - i) * (abs(x - i) + 1) / 2 for x in data])
 
 p = list(set(data))
 m = data[int(len(data) / 2)]
-t = s1(m)
 
-for i in range(m + 1, 1000):
-    s = s1(p[i])
-    if s > t: break
-    else: t = s
-
-for i in range(m - 1, 0, -1):
-    s = s1(p[i])
-    if s > t: break
-    else: t = s
+def f(s):
+    t = s(m)
+    for i in range(m + 1, 1000):
+       x = s(p[i])
+        if x > t: break
+        else: t = x
     
-t
+    for i in range(m - 1, 0, -1):
+        x = s(p[i])
+        if x > t: break
+        else: t = x
+    
+    return t
+
+f(s1)
 
 # -------------------------------------------------- Part 2 ------------------------------------------------------
 
-t = s2(m)
-
-for i in range(m + 1, 1000):
-    s = s2(p[i])
-    if s > t: break
-    else: t = s
-
-for i in range(m - 1, 0, -1):
-    s = s2(p[i])
-    if s > t: break
-    else: t = s
-    
-t
+f(s2)
