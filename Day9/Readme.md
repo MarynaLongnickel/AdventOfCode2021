@@ -37,8 +37,8 @@ The size of a basin is the number of locations within the basin, including the l
 The top-left basin, size 3:
 
 ```html
-__21__99943210
-__3__987894921
+..99943210
+.987894921
 9856789892
 8767896789
 9899965678
@@ -47,9 +47,9 @@ __3__987894921
 The top-right basin, size 9:
 
 ```html
-2199943210
-3987894921
-9856789892
+21999.....
+398789.92.
+985678989.
 8767896789
 9899965678
 ```
@@ -58,10 +58,10 @@ The middle basin, size 14:
 
 ```html
 2199943210
-3987894921
-9856789892
-8767896789
-9899965678
+39...94921
+9.....9892
+.....96789
+9.99965678
 ```
 
 The bottom-right basin, size 9:
@@ -69,9 +69,9 @@ The bottom-right basin, size 9:
 ```html
 2199943210
 3987894921
-9856789892
-8767896789
-9899965678
+9856789.92
+876789...9
+98999.....
 ```
 
 Find the three largest basins and multiply their sizes together. In the above example, this is 9 * 14 * 9 = 1134.
