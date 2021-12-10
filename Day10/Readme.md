@@ -77,7 +77,7 @@ Did you know that autocomplete tools also have contests? It's true! The score is
 - ): 1 point.
 - ]: 2 points.
 - }: 3 points.
-- >: 4 points.
+- \>: 4 points.
 
 So, the last completion string above - ])}> - would be scored as follows:
 
